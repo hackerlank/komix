@@ -33,8 +33,8 @@ ui_() {
 	connect( this->ui_.buttons, SIGNAL( clicked( QAbstractButton * ) ), this, SLOT( dispatch_( QAbstractButton * ) ) );
 
 	this->ui_.language->addItem( "English" );
-	this->ui_.language->addItem( "正體中文", "zh_TW" );
-	this->ui_.language->addItem( "日本語", "ja_JP" );
+	this->ui_.language->addItem( "\xE6\xAD\xA3\xE9\xAB\x94\xE4\xB8\xAD\xE6\x96\x87", "zh_TW" );
+	this->ui_.language->addItem( "\xE6\x97\xA5\xE6\x9C\xAC\xE8\xAA\x9E", "ja_JP" );
 
 	connect( this->ui_.language, SIGNAL( currentIndexChanged( int ) ), this, SLOT( dispatch_( int ) ) );
 

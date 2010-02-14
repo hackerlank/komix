@@ -65,6 +65,7 @@ int main( int argc, char * argv[] ) {
 		return 0;
 	}
 
+	QTextCodec::setCodecForCStrings( QTextCodec::codecForName( "UTF-8" ) );
 	QTextCodec::setCodecForTr( QTextCodec::codecForName( "UTF-8" ) );
 
 	QSettings::setDefaultFormat( QSettings::IniFormat );

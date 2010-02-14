@@ -31,6 +31,10 @@ ui_() {
 	this->ui_.setupUi( this );
 	connect( this->ui_.buttons, SIGNAL( clicked( QAbstractButton * ) ), this, SLOT( dispatch_( QAbstractButton * ) ) );
 
+	this->ui_.language->addItem( "English" );
+	this->ui_.language->addItem( "正體中文", "zh_TW" );
+	this->ui_.language->addItem( "日本語", "ja_JP" );
+
 	this->loadSettings_();
 }
 

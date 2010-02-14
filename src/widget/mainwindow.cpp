@@ -49,10 +49,11 @@ dumpState_( Qt::WindowNoState ) {
 	this->ui_.setupUi( this );
 
 	this->setupMenuBar_();
-	initCentralWidget_();
-	initTrayIcon_();
+	this->initCentralWidget_();
+	this->initTrayIcon_();
 
-	connect( imageArea_, SIGNAL( errorOccured( const QString & ) ), this, SLOT( popupError_( const QString & ) ) );
+	connect( this->imageArea_, SIGNAL( errorOccured( const QString & ) ), this, SLOT( popupError_( const QString & ) ) );
+	connect( this->preference_, SIGNAL( languageChanged( const QString & ) ), this, SLOT( changeLanguage_( const QString & ) ) );
 }
 
 void MainWindow::setupMenuBar_() {
@@ -138,6 +139,9 @@ void MainWindow::systemTrayHelper_( QSystemTrayIcon::ActivationReason reason ) {
 		default:
 			;
 	}
+}
+
+void MainWindow::changeLanguage_( const QString & locale ) {
 }
 
 void MainWindow::open( const QUrl & url ) {

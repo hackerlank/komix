@@ -43,8 +43,12 @@ namespace KomiX {
 			/// Override from QDialog
 			virtual void reject();
 
+		signals:
+			void languageChanged( const QString & locale );
+
 		private slots:
 			void dispatch_( QAbstractButton * );
+			void dispatch_( int );
 
 		private:
 			void loadSettings_();

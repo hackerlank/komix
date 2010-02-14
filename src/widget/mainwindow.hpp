@@ -64,8 +64,9 @@ namespace KomiX {
 			void toggleSystemTray();
 
 		private slots:
-			void systemTrayHelper_( QSystemTrayIcon::ActivationReason reason );
-			void popupError_( const QString & errMsg );
+			void changeLanguage_( const QString & );
+			void systemTrayHelper_( QSystemTrayIcon::ActivationReason );
+			void popupError_( const QString & );
 
 		private:
 			void setupMenuBar_();

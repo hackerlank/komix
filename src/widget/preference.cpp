@@ -32,11 +32,9 @@ ui_() {
 
 	connect( this->ui_.buttons, SIGNAL( clicked( QAbstractButton * ) ), this, SLOT( dispatch_( QAbstractButton * ) ) );
 
-	this->ui_.language->addItem( "English" );
+	this->ui_.language->addItem( "English (United States)", "en_US" );
 	this->ui_.language->addItem( "\xE6\xAD\xA3\xE9\xAB\x94\xE4\xB8\xAD\xE6\x96\x87", "zh_TW" );
 	this->ui_.language->addItem( "\xE6\x97\xA5\xE6\x9C\xAC\xE8\xAA\x9E", "ja_JP" );
-
-	connect( this->ui_.language, SIGNAL( currentIndexChanged( int ) ), this, SLOT( dispatch_( int ) ) );
 
 	this->loadSettings_();
 }
@@ -58,24 +56,17 @@ void Preference::dispatch_( QAbstractButton * button ) {
 	}
 }
 
-void Preference::dispatch_( int index ) {
-	emit languageChanged( this->ui_.language->itemData( index ).toString() );
-}
-
 void Preference::loadSettings_() {
 	QSettings ini;
 
-	if( ini.contains( "language" ) ) {
-		QVariant value = ini.value( "language" );
-		int index = this->ui_.language->findData( value );
-		if( index < 0 ) {
-			this->ui_.language->setCurrentIndex( 0 );
-		} else {
-			this->ui_.language->setCurrentIndex( index );
-		}
-	} else {
+	QVariant value = ini.value( "language", "en_US" );
+	int index = this->ui_.language->findData( value );
+	if( index < 0 ) {
 		this->ui_.language->setCurrentIndex( 0 );
+	} else {
+		this->ui_.language->setCurrentIndex( index );
 	}
+	emit languageChanged( this->ui_.language->itemData( this->ui_.language->currentIndex() ).toString() );
 
 	this->ui_.pixelInterval->setValue( ini.value( "pixel_interval", 1 ).toInt() );
 	this->ui_.timeInterval->setValue( ini.value( "time_interval", 1 ).toInt() );
@@ -85,11 +76,8 @@ void Preference::saveSettings_() {
 	QSettings ini;
 
 	QVariant language = this->ui_.language->itemData( this->ui_.language->currentIndex() );
-	if( !language.isValid() ) {
-		ini.remove( "language" );
-	} else {
-		ini.setValue( "language", language.toString() );
-	}
+	ini.setValue( "language", language );
+	emit languageChanged( language.toString() );
 
 	ini.setValue( "pixel_interval", this->ui_.pixelInterval->value() );
 	ini.setValue( "time_interval", this->ui_.timeInterval->value() );

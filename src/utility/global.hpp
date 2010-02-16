@@ -24,7 +24,13 @@
 #include <list>
 
 class QAction;
+template< typename K, typename V >
+class QMap;
+template< typename T >
+class QSharedPointer;
+class QString;
 class QStringList;
+class QTranslator;
 class QWidget;
 
 /**
@@ -39,6 +45,11 @@ namespace KomiX {
 	bool registerFileMenuHook( FileMenuHook hook );
 	/// get file menu hooks
 	const std::list< FileMenuHook > & getFileMenuHooks();
+
+	typedef QMap< QString, QSharedPointer< QTranslator > > TranslationMap;
+	void loadTranslations();
+	const TranslationMap & getTranslations();
+
 
 	/**
 	 * @brief Get supported formats

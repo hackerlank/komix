@@ -63,6 +63,9 @@ namespace KomiX {
 			/// toggle minimize system tray
 			void toggleSystemTray();
 
+		protected:
+			virtual void changeEvent( QEvent * event );
+
 		private slots:
 			void changeLanguage_( const QString & );
 			void systemTrayHelper_( QSystemTrayIcon::ActivationReason );

@@ -48,7 +48,6 @@ namespace KomiX {
 
 		private slots:
 			void dispatch_( QAbstractButton * );
-			void dispatch_( int );
 
 		private:
 			void loadSettings_();

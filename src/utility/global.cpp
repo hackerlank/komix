@@ -20,10 +20,15 @@
  */
 #include "global.hpp"
 
-#include <QString>
-#include <QImageReader>
+#include <QtCore/QCoreApplication>
+#include <QtCore/QDir>
+#include <QtCore/QFileInfo>
+#include <QtCore/QMap>
+#include <QtCore/QSharedPointer>
+#include <QtCore/QString>
+#include <QtCore/QTranslator>
 #include <QtGlobal>
-#include <QCoreApplication>
+#include <QtGui/QImageReader>
 
 #include <algorithm>
 
@@ -52,6 +57,11 @@ namespace {
 		return hooks;
 	}
 
+	KomiX::TranslationMap & translations() {
+		static KomiX::TranslationMap t;
+		return t;
+	}
+
 }
 
 namespace KomiX {
@@ -63,6 +73,23 @@ namespace KomiX {
 	bool registerFileMenuHook( FileMenuHook hook ) {
 		fileMenuHooks().push_back( hook );
 		return true;
+	}
+
+	void loadTranslations() {
+		QDir d( qApp->applicationDirPath() );
+#ifdef _MSC_VER
+		d.cd( ".." );
+#endif
+		QList< QFileInfo > qms( d.entryInfoList( QStringList( "*.qm" ), QDir::Files ) );
+		foreach( QFileInfo qm, qms ) {
+			TranslationMap::mapped_type tmp( new QTranslator );
+			tmp->load( qm.absoluteFilePath() );
+			translations().insert( qm.fileName(), tmp );
+		}
+	}
+
+	const TranslationMap & getTranslations() {
+		return translations();
 	}
 
 	const QStringList & SupportedFormats() {

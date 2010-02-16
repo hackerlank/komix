@@ -19,10 +19,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include "mainwindow.hpp"
+#include "global.hpp"
 
+#include <QtCore/QDir>
 #include <QtCore/QSettings>
 #include <QtCore/QStringList>
 #include <QtCore/QTextCodec>
+#include <QtDebug>
 
 #include <QtSingleApplication>
 
@@ -69,6 +72,12 @@ int main( int argc, char * argv[] ) {
 	QTextCodec::setCodecForTr( QTextCodec::codecForName( "UTF-8" ) );
 
 	QSettings::setDefaultFormat( QSettings::IniFormat );
+
+	KomiX::loadTranslations();
+	const KomiX::TranslationMap & t( KomiX::getTranslations() );
+	for( KomiX::TranslationMap::const_iterator it = t.begin(); it != t.end(); ++it ) {
+		app.installTranslator( it.value().data() );
+	}
 
 	KomiX::widget::MainWindow mainWindow;
 	mainWindow.setWindowTitle( QtSingleApplication::applicationName() );

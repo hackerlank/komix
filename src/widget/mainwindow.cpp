@@ -24,17 +24,13 @@
 #include "mainwindow.hpp"
 #include "preference.hpp"
 
+#include <QtCore/QTranslator>
 #include <QtCore/QUrl>
 #include <QtDebug>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
-#include <QtGui/QFileDialog>
-#include <QtGui/QLabel>
 #include <QtGui/QMenu>
-#include <QtGui/QMenuBar>
 #include <QtGui/QMessageBox>
-#include <QtGui/QTabWidget>
-#include <QtGui/QVBoxLayout>
 
 using namespace KomiX::widget;
 
@@ -54,6 +50,14 @@ dumpState_( Qt::WindowNoState ) {
 
 	connect( this->imageArea_, SIGNAL( errorOccured( const QString & ) ), this, SLOT( popupError_( const QString & ) ) );
 	connect( this->preference_, SIGNAL( languageChanged( const QString & ) ), this, SLOT( changeLanguage_( const QString & ) ) );
+}
+
+void MainWindow::changeEvent( QEvent * event ) {
+	if( event->type() == QEvent::LanguageChange ) {
+		this->ui_.retranslateUi( this );
+	} else {
+		QMainWindow::changeEvent( event );
+	}
 }
 
 void MainWindow::setupMenuBar_() {
@@ -142,6 +146,15 @@ void MainWindow::systemTrayHelper_( QSystemTrayIcon::ActivationReason reason ) {
 }
 
 void MainWindow::changeLanguage_( const QString & locale ) {
+	qDebug() << locale;
+	const TranslationMap & map( getTranslations() );
+	if( !map.contains( locale ) ) {
+		qDebug() << "Unknown locale";
+		return;
+	}
+	QSharedPointer< QTranslator > t( map[locale] );
+	qApp->removeTranslator( t.data() );
+	qApp->installTranslator( t.data() );
 }
 
 void MainWindow::open( const QUrl & url ) {

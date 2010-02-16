@@ -118,27 +118,27 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>KomiX::widget::MainWindow</name>
     <message>
-        <location filename="../src/widget/mainwindow.cpp" line="122"/>
+        <location filename="../src/widget/mainwindow.cpp" line="129"/>
         <source>&amp;Quit</source>
         <translation>離開(&amp;Q)</translation>
     </message>
     <message>
-        <location filename="../src/widget/mainwindow.cpp" line="125"/>
+        <location filename="../src/widget/mainwindow.cpp" line="132"/>
         <source>KomiX</source>
         <translation>KomiX</translation>
     </message>
     <message>
-        <location filename="../src/widget/mainwindow.cpp" line="145"/>
+        <location filename="../src/widget/mainwindow.cpp" line="164"/>
         <source>No file to open</source>
         <translation>無法開啟檔案</translation>
     </message>
     <message>
-        <location filename="../src/widget/mainwindow.cpp" line="145"/>
+        <location filename="../src/widget/mainwindow.cpp" line="164"/>
         <source>No openable file in this directory.</source>
         <translation>在這個資料夾內無可開啟之檔案。</translation>
     </message>
     <message>
-        <location filename="../src/widget/mainwindow.cpp" line="157"/>
+        <location filename="../src/widget/mainwindow.cpp" line="176"/>
         <source>Oops!</source>
         <translation>噢!</translation>
     </message>
@@ -308,21 +308,26 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../src/widget/preference.ui" line="23"/>
+        <source>Language</source>
+        <translation>語言</translation>
+    </message>
+    <message>
+        <location filename="../src/widget/preference.ui" line="35"/>
         <source>Scroll Speed</source>
         <translation>捲動速度</translation>
     </message>
     <message>
-        <location filename="../src/widget/preference.ui" line="29"/>
+        <location filename="../src/widget/preference.ui" line="41"/>
         <source>Scroll</source>
         <translation>捲動</translation>
     </message>
     <message>
-        <location filename="../src/widget/preference.ui" line="46"/>
+        <location filename="../src/widget/preference.ui" line="58"/>
         <source>pixel(s) per</source>
         <translation>像素每</translation>
     </message>
     <message>
-        <location filename="../src/widget/preference.ui" line="63"/>
+        <location filename="../src/widget/preference.ui" line="75"/>
         <source>millisecond(s)</source>
         <translation>毫秒</translation>
     </message>

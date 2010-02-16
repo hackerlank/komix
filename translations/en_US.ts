@@ -45,17 +45,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/model/archive/archivehook.cpp" line="52"/>
         <source>Open &amp;Archive</source>
-        <translation type="unfinished"></translation>
+        <translation>Open &amp;Archive</translation>
     </message>
     <message>
         <location filename="../src/model/archive/archivehook.cpp" line="53"/>
         <source>Ctrl+A</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+A</translation>
     </message>
     <message>
         <location filename="../src/model/archive/archivehook.cpp" line="62"/>
         <source>Open archive</source>
-        <translation type="unfinished"></translation>
+        <translation>Open archive</translation>
     </message>
 </context>
 <context>
@@ -63,17 +63,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/model/directory/directoryhook.cpp" line="40"/>
         <source>Open &amp;Directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Open &amp;Directory</translation>
     </message>
     <message>
         <location filename="../src/model/directory/directoryhook.cpp" line="41"/>
         <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
+        <translation>Crrl+D</translation>
     </message>
     <message>
         <location filename="../src/model/directory/directoryhook.cpp" line="48"/>
         <source>Open dicrectory</source>
-        <translation type="unfinished"></translation>
+        <translation>Open dicrectory</translation>
     </message>
 </context>
 <context>
@@ -81,17 +81,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="97"/>
         <source>&amp;Open Image</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Open Image</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="98"/>
         <source>Ctrl+O</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+O</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="105"/>
         <source>Open image file</source>
-        <translation type="unfinished"></translation>
+        <translation>Open image file</translation>
     </message>
 </context>
 <context>
@@ -112,7 +112,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/imagearea.cpp" line="107"/>
         <source>No openable file.</source>
-        <translation type="unfinished"></translation>
+        <translation>No openable file.</translation>
     </message>
 </context>
 <context>
@@ -120,27 +120,27 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/mainwindow.cpp" line="123"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Quit</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.cpp" line="126"/>
         <source>KomiX</source>
-        <translation type="unfinished"></translation>
+        <translation>KomiX</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.cpp" line="149"/>
         <source>No file to open</source>
-        <translation type="unfinished"></translation>
+        <translation>No file to open</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.cpp" line="149"/>
         <source>No openable file in this directory.</source>
-        <translation type="unfinished"></translation>
+        <translation>No openable file in this directory.</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.cpp" line="161"/>
         <source>Oops!</source>
-        <translation type="unfinished"></translation>
+        <translation>Oops!</translation>
     </message>
 </context>
 <context>
@@ -148,147 +148,147 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/mainwindow.ui" line="14"/>
         <source>KomiX</source>
-        <translation type="unfinished"></translation>
+        <translation>KomiX</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="28"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;File</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="33"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;View</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="47"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Edit</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="53"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Go</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="62"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Help</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="75"/>
         <source>Smooth &amp;Next</source>
-        <translation type="unfinished"></translation>
+        <translation>Smooth &amp;Next</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="78"/>
         <source>Space</source>
-        <translation type="unfinished"></translation>
+        <translation>Space</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="83"/>
         <source>Smooth &amp;Previous</source>
-        <translation type="unfinished"></translation>
+        <translation>Smooth &amp;Previous</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="86"/>
         <source>Return</source>
-        <translation type="unfinished"></translation>
+        <translation>Return</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="91"/>
         <source>Page &amp;Head</source>
-        <translation type="unfinished"></translation>
+        <translation>Page &amp;Head</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="94"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Home</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="99"/>
         <source>Page &amp;Tail</source>
-        <translation type="unfinished"></translation>
+        <translation>Page &amp;Tail</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="102"/>
         <source>End</source>
-        <translation type="unfinished"></translation>
+        <translation>End</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="107"/>
         <source>&amp;Full Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Full Screen</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="110"/>
         <source>F11</source>
-        <translation type="unfinished"></translation>
+        <translation>F11</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="115"/>
         <source>Hide &amp;Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Hide &amp;Window</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="118"/>
         <source>Esc</source>
-        <translation type="unfinished"></translation>
+        <translation>Esc</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="123"/>
         <source>&amp;Scale Image</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Scale Image</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="126"/>
         <source>Ctrl+S</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+S</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="131"/>
         <source>&amp;Preference</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Preference</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="136"/>
         <source>&amp;Go To ...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Go To ...</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="139"/>
         <source>Ctrl+G</source>
-        <translation type="unfinished"></translation>
+        <translation>Ctrl+G</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="144"/>
         <source>&amp;Previous Image</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Previous Image</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="147"/>
         <source>PgUp</source>
-        <translation type="unfinished"></translation>
+        <translation>PgUp</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="152"/>
         <source>&amp;Next Image</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Next Image</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="155"/>
         <source>PgDown</source>
-        <translation type="unfinished"></translation>
+        <translation>PgDown</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="160"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;About</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="165"/>
         <source>About &amp;Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>About &amp;Qt</translation>
     </message>
 </context>
 <context>
@@ -296,7 +296,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/navigator.ui" line="17"/>
         <source>Go to ...</source>
-        <translation type="unfinished"></translation>
+        <translation>Go to ...</translation>
     </message>
 </context>
 <context>
@@ -304,17 +304,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/preference.ui" line="17"/>
         <source>Preference</source>
-        <translation type="unfinished"></translation>
+        <translation>Preference</translation>
     </message>
     <message>
         <location filename="../src/widget/preference.ui" line="23"/>
         <source>Language</source>
-        <translation type="unfinished"></translation>
+        <translation>Language</translation>
     </message>
     <message>
         <location filename="../src/widget/preference.ui" line="35"/>
         <source>Scroll Speed</source>
-        <translation type="unfinished"></translation>
+        <translation>Scroll Speed</translation>
     </message>
     <message>
         <location filename="../src/widget/preference.ui" line="41"/>
@@ -440,27 +440,27 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/scalewidget.ui" line="14"/>
         <source>Scale</source>
-        <translation type="unfinished"></translation>
+        <translation>Scale</translation>
     </message>
     <message>
         <location filename="../src/widget/scalewidget.ui" line="22"/>
         <source>Fit &amp;width</source>
-        <translation type="unfinished"></translation>
+        <translation>Fit &amp;width</translation>
     </message>
     <message>
         <location filename="../src/widget/scalewidget.ui" line="29"/>
         <source>Fit &amp;height</source>
-        <translation type="unfinished"></translation>
+        <translation>Fit &amp;height</translation>
     </message>
     <message>
         <location filename="../src/widget/scalewidget.ui" line="36"/>
         <source>&amp;Fit window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fit window</translation>
     </message>
     <message>
         <location filename="../src/widget/scalewidget.ui" line="43"/>
         <source>&amp;Customize</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Customize</translation>
     </message>
 </context>
 </TS>

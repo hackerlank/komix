@@ -118,27 +118,27 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>KomiX::widget::MainWindow</name>
     <message>
-        <location filename="../src/widget/mainwindow.cpp" line="122"/>
+        <location filename="../src/widget/mainwindow.cpp" line="129"/>
         <source>&amp;Quit</source>
         <translation>終了(&amp;Q)</translation>
     </message>
     <message>
-        <location filename="../src/widget/mainwindow.cpp" line="125"/>
+        <location filename="../src/widget/mainwindow.cpp" line="132"/>
         <source>KomiX</source>
         <translation>KomiX</translation>
     </message>
     <message>
-        <location filename="../src/widget/mainwindow.cpp" line="145"/>
+        <location filename="../src/widget/mainwindow.cpp" line="164"/>
         <source>No file to open</source>
         <translation>開きできるファイルがありません</translation>
     </message>
     <message>
-        <location filename="../src/widget/mainwindow.cpp" line="145"/>
+        <location filename="../src/widget/mainwindow.cpp" line="164"/>
         <source>No openable file in this directory.</source>
         <translation>このフォルダーに開きできるファイルがありません。</translation>
     </message>
     <message>
-        <location filename="../src/widget/mainwindow.cpp" line="157"/>
+        <location filename="../src/widget/mainwindow.cpp" line="176"/>
         <source>Oops!</source>
         <translation>げっ!</translation>
     </message>
@@ -168,7 +168,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/mainwindow.ui" line="53"/>
         <source>&amp;Go</source>
-        <translation type="unfinished"></translation>
+        <translation>ゴー(&amp;G)</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="62"/>
@@ -198,7 +198,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/mainwindow.ui" line="91"/>
         <source>Page &amp;Head</source>
-        <translation type="unfinished"></translation>
+        <translation>最初に戻す(&amp;H)</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="94"/>
@@ -208,7 +208,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/mainwindow.ui" line="99"/>
         <source>Page &amp;Tail</source>
-        <translation type="unfinished"></translation>
+        <translation>最後に巻く(&amp;T)</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="102"/>
@@ -218,7 +218,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/mainwindow.ui" line="107"/>
         <source>&amp;Full Screen</source>
-        <translation type="unfinished"></translation>
+        <translation>フールスクリーン(&amp;F)</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="110"/>
@@ -228,7 +228,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/mainwindow.ui" line="115"/>
         <source>Hide &amp;Window</source>
-        <translation type="unfinished"></translation>
+        <translation>ウィンドウを隠す(&amp;W)</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="118"/>
@@ -263,17 +263,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/mainwindow.ui" line="144"/>
         <source>&amp;Previous Image</source>
-        <translation type="unfinished"></translation>
+        <translation>前のページ(&amp;P)</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="147"/>
         <source>PgUp</source>
-        <translation type="unfinished"></translation>
+        <translation>PgUp</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="152"/>
         <source>&amp;Next Image</source>
-        <translation type="unfinished"></translation>
+        <translation>次のページ(&amp;N)</translation>
     </message>
     <message>
         <location filename="../src/widget/mainwindow.ui" line="155"/>
@@ -308,21 +308,26 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../src/widget/preference.ui" line="23"/>
+        <source>Language</source>
+        <translation>言語</translation>
+    </message>
+    <message>
+        <location filename="../src/widget/preference.ui" line="35"/>
         <source>Scroll Speed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/widget/preference.ui" line="29"/>
+        <location filename="../src/widget/preference.ui" line="41"/>
         <source>Scroll</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/widget/preference.ui" line="46"/>
+        <location filename="../src/widget/preference.ui" line="58"/>
         <source>pixel(s) per</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/widget/preference.ui" line="63"/>
+        <location filename="../src/widget/preference.ui" line="75"/>
         <source>millisecond(s)</source>
         <translation type="unfinished"></translation>
     </message>

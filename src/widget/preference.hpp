@@ -36,6 +36,7 @@ namespace KomiX {
 			/// constructor
 			Preference( QWidget * parent );
 
+			void load();
 
 		public slots:
 			/// Override from QDialog, won't hide dialog
@@ -50,7 +51,6 @@ namespace KomiX {
 			void dispatch_( QAbstractButton * );
 
 		private:
-			void loadSettings_();
 			void saveSettings_();
 
 			Ui::Preference ui_;

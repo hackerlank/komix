@@ -35,8 +35,6 @@ ui_() {
 	this->ui_.language->addItem( "English (United States)", "en_US" );
 	this->ui_.language->addItem( "\xE6\xAD\xA3\xE9\xAB\x94\xE4\xB8\xAD\xE6\x96\x87", "zh_TW" );
 	this->ui_.language->addItem( "\xE6\x97\xA5\xE6\x9C\xAC\xE8\xAA\x9E", "ja_JP" );
-
-	this->loadSettings_();
 }
 
 void Preference::dispatch_( QAbstractButton * button ) {
@@ -56,7 +54,7 @@ void Preference::dispatch_( QAbstractButton * button ) {
 	}
 }
 
-void Preference::loadSettings_() {
+void Preference::load() {
 	QSettings ini;
 
 	QVariant value = ini.value( "language", "en_US" );
@@ -90,7 +88,7 @@ void Preference::accept() {
 }
 
 void Preference::reject() {
-	this->loadSettings_();
+	this->load();
 
 	QDialog::reject();
 }

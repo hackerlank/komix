@@ -50,6 +50,8 @@ dumpState_( Qt::WindowNoState ) {
 
 	connect( this->imageArea_, SIGNAL( errorOccured( const QString & ) ), this, SLOT( popupError_( const QString & ) ) );
 	connect( this->preference_, SIGNAL( languageChanged( const QString & ) ), this, SLOT( changeLanguage_( const QString & ) ) );
+
+	this->preference_->load();
 }
 
 void MainWindow::changeEvent( QEvent * event ) {

@@ -84,7 +84,7 @@ namespace KomiX {
 		foreach( QFileInfo qm, qms ) {
 			TranslationMap::mapped_type tmp( new QTranslator );
 			tmp->load( qm.absoluteFilePath() );
-			translations().insert( qm.fileName(), tmp );
+			translations().insert( qm.baseName(), tmp );
 		}
 	}
 

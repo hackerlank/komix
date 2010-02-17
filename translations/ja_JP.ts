@@ -427,12 +427,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="74"/>
         <source>Others</source>
-        <translation type="unfinished"></translation>
+        <translation>その他</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="82"/>
         <source>All Supported File</source>
-        <translation type="unfinished"></translation>
+        <translation>すべてサポートされたファイル</translation>
     </message>
 </context>
 <context>

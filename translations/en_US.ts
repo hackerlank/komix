@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/widget/aboutwidget.ui" line="14"/>
         <source>About KomiX</source>
-        <translation type="unfinished"></translation>
+        <translation>About KomiX</translation>
     </message>
     <message>
         <location filename="../src/widget/aboutwidget.ui" line="50"/>
@@ -17,12 +17,12 @@
     <message>
         <location filename="../src/widget/aboutwidget.ui" line="66"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;About</translation>
     </message>
     <message>
         <location filename="../src/widget/aboutwidget.ui" line="80"/>
         <source>A&amp;uthors</source>
-        <translation type="unfinished"></translation>
+        <translation>A&amp;uthors</translation>
     </message>
     <message>
         <location filename="../src/widget/aboutwidget.ui" line="86"/>
@@ -37,7 +37,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/aboutwidget.ui" line="102"/>
         <source>&amp;Certification</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Certification</translation>
     </message>
 </context>
 <context>
@@ -319,17 +319,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/widget/preference.ui" line="41"/>
         <source>Scroll</source>
-        <translation type="unfinished"></translation>
+        <translation>Scroll</translation>
     </message>
     <message>
         <location filename="../src/widget/preference.ui" line="58"/>
         <source>pixel(s) per</source>
-        <translation type="unfinished"></translation>
+        <translation>pixel(s) per</translation>
     </message>
     <message>
         <location filename="../src/widget/preference.ui" line="75"/>
         <source>millisecond(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>millisecond(s)</translation>
     </message>
 </context>
 <context>
@@ -337,102 +337,102 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/model/archive/archivehook.cpp" line="31"/>
         <source>All Supported Archives ( %1 )</source>
-        <translation type="unfinished"></translation>
+        <translation>All Supported Archives ( %1 )</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="40"/>
         <source>Windows Bitmap</source>
-        <translation type="unfinished"></translation>
+        <translation>Windows Bitmap</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="42"/>
         <source>Graphic Interchange Format</source>
-        <translation type="unfinished"></translation>
+        <translation>Graphic Interchange Format</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="44"/>
         <source>Joint Photographic Experts Group</source>
-        <translation type="unfinished"></translation>
+        <translation>Joint Photographic Experts Group</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="46"/>
         <source>Network Graphics</source>
-        <translation type="unfinished"></translation>
+        <translation>Network Graphics</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="48"/>
         <source>Portable anymap</source>
-        <translation type="unfinished"></translation>
+        <translation>Portable anymap</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="50"/>
         <source>Tagged Image File Format</source>
-        <translation type="unfinished"></translation>
+        <translation>Tagged Image File Format</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="52"/>
         <source>X11</source>
-        <translation type="unfinished"></translation>
+        <translation>X11</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="54"/>
         <source>Silicon Graphics Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Silicon Graphics Image</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="56"/>
         <source>Truevision Advanced Raster Graphics Adapter</source>
-        <translation type="unfinished"></translation>
+        <translation>Truevision Advanced Raster Graphics Adapter</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="58"/>
         <source>Encapsulated PostScript</source>
-        <translation type="unfinished"></translation>
+        <translation>Encapsulated PostScript</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="60"/>
         <source>Scalable Vector Graphics</source>
-        <translation type="unfinished"></translation>
+        <translation>Scalable Vector Graphics</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="62"/>
         <source>eXperimental Computing Facility</source>
-        <translation type="unfinished"></translation>
+        <translation>eXperimental Computing Facility</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="64"/>
         <source>Photoshop Document</source>
-        <translation type="unfinished"></translation>
+        <translation>Photoshop Document</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="66"/>
         <source>PC Paintbrush Exchange</source>
-        <translation type="unfinished"></translation>
+        <translation>PC Paintbrush Exchange</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="68"/>
         <source>Windows icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Windows icon</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="70"/>
         <source>DirectDraw Surface</source>
-        <translation type="unfinished"></translation>
+        <translation>DirectDraw Surface</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="72"/>
         <source>OpenEXR</source>
-        <translation type="unfinished"></translation>
+        <translation>OpenEXR</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="74"/>
         <source>Others</source>
-        <translation type="unfinished"></translation>
+        <translation>Others</translation>
     </message>
     <message>
         <location filename="../src/model/single/singlehook.cpp" line="82"/>
         <source>All Supported File</source>
-        <translation type="unfinished"></translation>
+        <translation>All Supported File</translation>
     </message>
 </context>
 <context>

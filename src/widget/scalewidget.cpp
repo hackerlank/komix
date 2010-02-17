@@ -62,6 +62,14 @@ modes_( new QButtonGroup( this ) ) {
 	connect( this->ui_.scaleSlider, SIGNAL( valueChanged( int ) ), this, SLOT( valueHelper_( int ) ) );
 }
 
+void ScaleWidget::changeEvent( QEvent * event ) {
+	if( event->type() == QEvent::LanguageChange ) {
+		this->ui_.retranslateUi( this );
+	} else {
+		this->QWidget::changeEvent( event );
+	}
+}
+
 void ScaleWidget::scale( int ratio ) {
 	this->modes_->button( Custom )->setChecked( true );
 	if( ratio != 0 ) {

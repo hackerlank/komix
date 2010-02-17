@@ -39,3 +39,11 @@ ui_() {
 		"License: GPLv3 or later<br/>"
 	).arg( QApplication::applicationName() ).arg( QApplication::organizationName() ) );
 }
+
+void AboutWidget::changeEvent( QEvent * event ) {
+	if( event->type() == QEvent::LanguageChange ) {
+		this->ui_.retranslateUi( this );
+	} else {
+		this->QWidget::changeEvent( event );
+	}
+}

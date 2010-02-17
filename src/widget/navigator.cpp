@@ -40,6 +40,14 @@ selection_( NULL ) {
 	connect( this->ui_.buttons, SIGNAL( accepted() ), this, SLOT( openHelper_() ) );
 }
 
+void Navigator::changeEvent( QEvent * event ) {
+	if( event->type() == QEvent::LanguageChange ) {
+		this->ui_.retranslateUi( this );
+	} else {
+		this->QDialog::changeEvent( event );
+	}
+}
+
 void Navigator::setModel( FileModelSP model ) {
 	if( this->selection_ ) {
 		disconnect( this->selection_, SIGNAL( currentChanged( const QModelIndex &, const QModelIndex & ) ), this, SLOT( viewImage_( const QModelIndex &, const QModelIndex & ) ) );

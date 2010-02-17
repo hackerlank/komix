@@ -47,6 +47,9 @@ namespace KomiX {
 		signals:
 			void languageChanged( const QString & locale );
 
+		protected:
+			virtual void changeEvent( QEvent * event );
+
 		private slots:
 			void dispatch_( QAbstractButton * );
 

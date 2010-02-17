@@ -58,6 +58,9 @@ namespace KomiX {
 			 */
 			void required( const QModelIndex & item );
 
+		protected:
+			virtual void changeEvent( QEvent * event );
+
 		private slots:
 			void openHelper_();
 			void viewImage_( const QModelIndex &, const QModelIndex & );

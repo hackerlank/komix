@@ -37,6 +37,14 @@ ui_() {
 	this->ui_.language->addItem( "\xE6\x97\xA5\xE6\x9C\xAC\xE8\xAA\x9E", "ja_JP" );
 }
 
+void Preference::changeEvent( QEvent * event ) {
+	if( event->type() == QEvent::LanguageChange ) {
+		this->ui_.retranslateUi( this );
+	} else {
+		this->QDialog::changeEvent( event );
+	}
+}
+
 void Preference::dispatch_( QAbstractButton * button ) {
 	switch( this->ui_.buttons->buttonRole( button ) ) {
 	case QDialogButtonBox::RejectRole:

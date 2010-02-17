@@ -57,6 +57,9 @@ namespace KomiX {
 			 */
 			void scaled( int ratio );
 
+		protected:
+			virtual void changeEvent( QEvent * event );
+
 		private slots:
 			void valueHelper_( int = -4 );
 

@@ -30,6 +30,9 @@ namespace KomiX {
 		public:
 			AboutWidget( QWidget * parent );
 
+		protected:
+			virtual void changeEvent( QEvent * event );
+
 		private:
 			Ui::AboutWidget ui_;
 		};

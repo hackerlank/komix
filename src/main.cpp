@@ -26,6 +26,8 @@
 
 #include <QtGui/QApplication>
 
+#include <xTitan/xTitan.hpp>
+
 /// literal to string
 #define X(x) XX(x)
 /// symbol to literal
@@ -58,6 +60,8 @@ int main( int argc, char * argv[] ) {
 	if( args.length() > 1 ) {
 		mainWindow.open( args.at( 1 ) );
 	}
+
+	xTryTestAutomation();
 
 	mainWindow.show();
 	

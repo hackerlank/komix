@@ -12,6 +12,9 @@ include(${QT_USE_FILE})
 find_package(Boost REQUIRED signals)
 include_directories(${Boost_INCLUDE_DIRS})
 
+find_package(XTitan REQUIRED)
+include_directories(${XTITAN_INCLUDE_DIRS})
+
 set(KOMIX_VERSION_MAJOR 0)
 set(KOMIX_VERSION_MINOR 1)
 set(KOMIX_VERSION_PATCH 80)
@@ -54,7 +57,7 @@ else()
 	set_target_properties(komix PROPERTIES COMPILE_FLAGS "-std=c++0x")
 endif()
 
-target_link_libraries(komix ${KOMIX_EXTRA_LIBRARIES} ${QT_LIBRARIES} ${Boost_LIBRARIES})
+target_link_libraries(komix ${KOMIX_EXTRA_LIBRARIES} ${QT_LIBRARIES} ${Boost_LIBRARIES} ${XTITAN_LIBRARIES})
 
 # install
 include(InstallRequiredSystemLibraries)

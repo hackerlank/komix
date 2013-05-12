@@ -47,6 +47,7 @@ public:
 	void scale( double ratio );
 	void moveBy( const QPointF & );
 	void fromViewportMoveBy( QPointF delta = QPointF() );
+	Q_INVOKABLE void fromViewportMoveBy( qreal x, qreal y );
 	void updateScaling();
 	void updateViewportRectangle();
 	QLineF normalizeMotionVector( double, double );

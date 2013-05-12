@@ -26,6 +26,8 @@
 #include <QtGui/QGestureEvent>
 #include <QtGui/QPinchGesture>
 
+#include <xTitan/xTitan.hpp>
+
 using KomiX::widget::ImageView;
 using KomiX::FileController;
 using KomiX::ViewState;
@@ -149,6 +151,8 @@ currentState() {
 	this->addTransition( this->cState->higher(), this->tState );
 
 	this->currentState = this->cState;
+
+	xRegisterObject( this, "imageview" );
 }
 
 void ImageView::Private::addTransition( boost::signals2::signal< void () > & signal, std::shared_ptr< ViewState > state ) {
@@ -231,6 +235,13 @@ void ImageView::Private::moveBy( const QPointF & delta ) {
 }
 
 void ImageView::Private::fromViewportMoveBy( QPointF delta ) {
+	this->fromViewportMoveBy( delta.x(), delta.y() );
+}
+
+void ImageView::Private::fromViewportMoveBy( qreal x, qreal y ) {
+	spyInput % x % y;
+
+	QPointF delta( x, y );
 	delta /= this->imgRatio;
 	if( this->anime ) {
 		this->anime->stop();
